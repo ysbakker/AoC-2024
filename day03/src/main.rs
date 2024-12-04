@@ -2,7 +2,7 @@ use regex::Regex;
 use std::fs;
 
 fn main() {
-    let input = fs::read_to_string("input").unwrap();
+    let input = fs::read_to_string("input").unwrap().replace("\n", "");
     let sum = get_sum_of_multiples(&input);
     let mut sum_disabled = sum;
 
